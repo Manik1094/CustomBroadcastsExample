@@ -17,33 +17,27 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".SecondCustomBroadcastReceiver"
-            >
+        <receiver android:name=".SecondCustomBroadcastReceiver">
             <intent-filter android:priority="2">
-                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </receiver>
-
-        <receiver android:name=".FirstCustomBroadcastReceiver"
-           >
+        <receiver android:name=".FirstCustomBroadcastReceiver">
             <intent-filter android:priority="5">
-                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".LocalBroadcast">
-
             <intent-filter>
-                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.helloworld.custombroadcasts.CUSTOM_BROADCAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
-
-
     </application>
 
 </manifest>

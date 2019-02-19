@@ -13,7 +13,10 @@ public class LocalBroadcast extends BroadcastReceiver {
         String action = intent.getAction();
         if(MainActivity.CUSTOM_BROADCAST_ACTION.equals(action)){
             Log.e("LocalBroadcast" , "LocalBroadcast receive");
-            Toast.makeText(context, "LocalBroadcast Receive", Toast.LENGTH_SHORT).show();
         }
+
     }
 }
+
+
+
